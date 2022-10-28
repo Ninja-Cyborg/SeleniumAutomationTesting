@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test_All</a></td><td class="num">10</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">319,208</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_All &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.webapptestproject.testcases.OrderPageTest</td><td><a href="#m0">validateTotalPriceTest</a></td><td rowspan="1">1666841090974</td><td rowspan="1">29889</td></tr><tr class="failedodd"><td rowspan="1">com.webapptestproject.testcases.SearchPageTest</td><td><a href="#m1">validateSearchTest</a></td><td rowspan="1">1666841255622</td><td rowspan="1">8364</td></tr><tr><th colspan="4">Test_All &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.webapptestproject.testcases.CreateAccountPageTest</td><td><a href="#m2">createAccount</a></td><td rowspan="1">1666841123345</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">verifyAccountPageTest</a></td><td rowspan="1">1666841123612</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test_All &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.webapptestproject.testcases.CartPageTest</td><td><a href="#m4">addToCartTest</a></td><td rowspan="1">1666841145080</td><td rowspan="1">11023</td></tr><tr class="passedodd"><td rowspan="1">com.webapptestproject.testcases.EndToEndTest</td><td><a href="#m5">validateCheckoutTest</a></td><td rowspan="1">1666841197415</td><td rowspan="1">51965</td></tr><tr class="passedeven"><td rowspan="4">com.webapptestproject.testcases.HomePageTest</td><td><a href="#m6">currentUrlTest</a></td><td rowspan="1">1666841300693</td><td rowspan="1">14091</td></tr><tr class="passedeven"><td><a href="#m7">orderHistoryTest</a></td><td rowspan="1">1666841321850</td><td rowspan="1">14183</td></tr><tr class="passedeven"><td><a href="#m8">personalInformationTest</a></td><td rowspan="1">1666841342338</td><td rowspan="1">26850</td></tr><tr class="passedeven"><td><a href="#m9">wishlistTest</a></td><td rowspan="1">1666841376578</td><td rowspan="1">20626</td></tr><tr class="passedodd"><td rowspan="2">com.webapptestproject.testcases.IndexPageTest</td><td><a href="#m10">validateLogo</a></td><td rowspan="1">1666841129954</td><td rowspan="1">266</td></tr><tr class="passedodd"><td><a href="#m11">validateTitle</a></td><td rowspan="1">1666841137759</td><td rowspan="1">32</td></tr><tr class="passedeven"><td rowspan="1">com.webapptestproject.testcases.SearchPageTest</td><td><a href="#m12">verifyProductAvailability</a></td><td rowspan="1">1666841271583</td><td rowspan="1">5334</td></tr><tr class="passedodd"><td rowspan="1">com.webapptestproject.testcases.SigninPageTest</td><td><a href="#m13">validateLoginTest</a></td><td rowspan="1">1666841164149</td><td rowspan="1">25149</td></tr></tbody>
+</table>
+<h2>Test_All</h2><h3 id="m0">com.webapptestproject.testcases.OrderPageTest#validateTotalPriceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at com.webapptestproject.pageobject.OrderSummaryPage.getProductQuantityValue(OrderSummaryPage.java:77)
+	at com.webapptestproject.pageobject.OrderSummaryPage.getTotalProductPriceValue(OrderSummaryPage.java:64)
+	at com.webapptestproject.pageobject.OrderSummaryPage.validateTotalPrice(OrderSummaryPage.java:38)
+	at com.webapptestproject.testcases.OrderPageTest.validateTotalPriceTest(OrderPageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.webapptestproject.testcases.SearchPageTest#validateSearchTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.webapptestproject.testcases.SearchPageTest.validateSearchTest(SearchPageTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.webapptestproject.testcases.CreateAccountPageTest#createAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -1
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NegativeArraySizeException: -1
+	at com.webapptestproject.dataprovider.DataProviders.getEmail(DataProviders.java:39)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.webapptestproject.testcases.CreateAccountPageTest#verifyAccountPageTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NegativeArraySizeException: -1
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NegativeArraySizeException: -1
+	at com.webapptestproject.dataprovider.DataProviders.getEmail(DataProviders.java:39)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.webapptestproject.testcases.CartPageTest#addToCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.webapptestproject.testcases.EndToEndTest#validateCheckoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.webapptestproject.testcases.HomePageTest#currentUrlTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.webapptestproject.testcases.HomePageTest#orderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.webapptestproject.testcases.HomePageTest#personalInformationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.webapptestproject.testcases.HomePageTest#wishlistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.webapptestproject.testcases.IndexPageTest#validateLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.webapptestproject.testcases.IndexPageTest#validateTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.webapptestproject.testcases.SearchPageTest#verifyProductAvailability</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.webapptestproject.testcases.SigninPageTest#validateLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBroswerSuite" parallel="tests" thread-count="3">
+  <test thread-count="5" name="chrome_test">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+	    <class name="com.webapptestproject.testcases.EndToEndTest"/>
+      
+     </classes>
+   </test> <!-- Test -->
+   
+   <test thread-count="5" name="firefox_test">
+  	<parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.webapptestproject.testcases.SearchPageTest"/>
+     </classes>
+   </test> <!-- Test -->
+   
+   <test thread-count="5" name="edge_test">
+  	<parameter name="browser" value="edge"></parameter>
+    <classes>
+    <class name="com.webapptestproject.testcases.IndexPageTest"/>
+     </classes>
+   </test> <!-- Test -->
+</suite> <!-- Suite -->

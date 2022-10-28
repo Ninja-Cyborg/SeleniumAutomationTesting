@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Smoke">
+  <parameter name="browser" value="chrome"></parameter>
+  		<groups>
+  			<run>
+  				<include name="Smoke"></include>
+  			</run>
+  		</groups>
+    <classes>
+      <class name="com.webapptestproject.testcases.OrderPageTest"/>
+      <class name="com.webapptestproject.testcases.CreateAccountPageTest"/>
+      <class name="com.webapptestproject.testcases.IndexPageTest"/>
+      <class name="com.webapptestproject.testcases.CartPageTest"/>
+      <class name="com.webapptestproject.testcases.SigninPageTest"/>
+      <class name="com.webapptestproject.testcases.EndToEndTest"/>
+      <class name="com.webapptestproject.testcases.SearchPageTest"/>
+      <class name="com.webapptestproject.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
