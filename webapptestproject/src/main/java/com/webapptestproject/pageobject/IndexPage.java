@@ -10,8 +10,7 @@ import com.webapptestproject.actiondriver.Action;
 import com.webapptestproject.actiondriver.ActionImpl;
 import com.webapptestproject.base.Base;
 
-// username rootuser@xyz.com
-// password rootuser123
+
 public class IndexPage extends Base{
 	
 	ActionImpl action = new ActionImpl();
